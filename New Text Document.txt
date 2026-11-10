@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f9; }
+        .register-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; }
+        .input-group { margin-bottom: 15px; }
+        .input-group label { display: block; margin-bottom: 5px; }
+        .input-group input { width: 93%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { width: 100%; padding: 10px; background: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .message { color: red; margin-top: 10px; font-size: 14px; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="register-container">
+    <h2>Register</h2>
+    <form id="registrationForm">
+        <div class="input-group"><label>Username</label><input type="text" id="username" required></div>
+        <div class="input-group"><label>Email</label><input type="email" id="email" required></div>
+        <div class="input-group"><label>Password</label><input type="password" id="password" required></div>
+        <div class="input-group"><label>Confirm Password</label><input type="password" id="confirmPassword" required></div>
+        <button type="submit">Sign Up</button>
+    </form>
+    <div id="message" class="message"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
